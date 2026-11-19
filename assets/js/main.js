@@ -36,7 +36,7 @@
   <nav class="navbar navbar-expand-xl">
     <div class="container">
       <a class="aa-logo me-3" href="index.html" aria-label="Alisperi Aprebi">
-        <span class="aa-logo__mark"><img class="aa-logo__dark" src="assets/img/logo.png" alt="" width="95" height="79"><img class="aa-logo__light" src="assets/img/logo-light.png" alt="" width="95" height="79"></span>
+        <span class="aa-logo__badge"><img src="assets/img/logo.png" alt="" width="95" height="79"></span>
         <span class="aa-logo__text d-none d-sm-block"><b data-i18n="brand.name">${esc(t("brand.name"))}</b><small data-i18n="brand.tag">${esc(t("brand.tag"))}</small></span>
       </a>
       <a class="aa-phone d-xl-none ms-auto me-3 d-none d-md-block" href="${D.company.phoneHref}">${D.company.phone}</a>
