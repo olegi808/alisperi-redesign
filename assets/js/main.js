@@ -265,7 +265,7 @@
         </div>
 
         <h2 class="aa-h2 mt-5 h3">${esc(t("pr.map"))}</h2>
-        <iframe class="aa-map" style="min-height:340px" src="${loc.map}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="${esc(t("pr.map"))}"></iframe>
+        <iframe class="aa-map" src="${loc.map}&hl=${lang}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="${esc(t("pr.map"))}"></iframe>
       </div>
       <div class="col-lg-5">
         <div class="aa-side">

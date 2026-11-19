@@ -7,21 +7,21 @@ window.AA = {
     facebook: "https://www.facebook.com/alisperiaprebi",
     tour: "https://www.alisperiaprebi.ge/3dtour/360/fasadi/",
     address: { ru: "ул. Кедиа, 10, Тбилиси", en: "10 Kedia St, Tbilisi", ka: "კედიას ქ. 10, თბილისი" },
-    map: "https://maps.google.com/maps?q=Kedia%20St%2010%2C%20Tbilisi&z=15&output=embed"
+    map: "https://maps.google.com/maps?q=41.733361,44.784400&z=16&output=embed"
   },
 
   locations: {
     beliashvili: {
       ru: "Белиашвили", en: "Beliashvili", ka: "ბელიაშვილი",
-      map: "https://maps.google.com/maps?q=Nikoloz%20Bokhua%20St%201%2C%20Tbilisi&z=15&output=embed"
+      map: "https://maps.google.com/maps?q=41.779878,44.779709&z=16&output=embed"
     },
     ninua: {
       ru: "Нинуа", en: "Ninua", ka: "ნინუა",
-      map: "https://maps.google.com/maps?q=Vazha%20Ninua%20St%203%2C%20Tbilisi&z=15&output=embed"
+      map: "https://maps.google.com/maps?q=41.742377,44.785745&z=16&output=embed"
     },
     didube: {
       ru: "Дидубе", en: "Didube", ka: "დიდუბე",
-      map: "https://maps.google.com/maps?q=Kedia%20St%2010%2C%20Tbilisi&z=15&output=embed"
+      map: "https://maps.google.com/maps?q=41.733361,44.784400&z=16&output=embed"
     }
   },
 
