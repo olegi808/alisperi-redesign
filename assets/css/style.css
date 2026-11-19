@@ -58,18 +58,15 @@ body[data-page="home"] .aa-header { position: fixed; left: 0; right: 0; backgrou
 body[data-page="home"] .aa-header.is-solid { background: rgba(255,255,255,.97); border-color: var(--aa-line); backdrop-filter: blur(10px); box-shadow: 0 10px 30px -24px rgba(0,0,0,.5); }
 
 .aa-logo { position: relative; display: flex; align-items: center; gap: .85rem; color: inherit; }
-.aa-logo__badge {
-  align-self: flex-start; background: #fff; width: 96px; height: 98px; margin-bottom: -18px;
-  display: grid; place-items: center; padding: 8px 6px 14px;
-  clip-path: polygon(0 0, 100% 0, 100% 84%, 50% 100%, 0 84%);
-  box-shadow: 0 8px 18px rgba(0,0,0,.18);
-  transition: height .3s, width .3s;
-}
-.aa-logo__badge img { width: 100%; height: auto; display: block; }
+.aa-logo__mark { position: relative; flex: none; display: block; height: 58px; aspect-ratio: 95 / 79; transition: height .3s; }
+.aa-logo__mark img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; transition: opacity .3s; }
+.aa-logo__light { opacity: 0; }
+body[data-page="home"] .aa-header:not(.is-solid) .aa-logo__light { opacity: 1; }
+body[data-page="home"] .aa-header:not(.is-solid) .aa-logo__dark { opacity: 0; }
 .aa-logo__text { line-height: 1.1; }
 .aa-logo__text b { display: block; font-weight: 800; font-size: 1.02rem; letter-spacing: .02em; text-transform: uppercase; }
 .aa-logo__text small { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; opacity: .7; }
-.aa-header.is-solid .aa-logo__badge, body:not([data-page="home"]) .aa-logo__badge { width: 78px; height: 80px; margin-bottom: -14px; }
+.aa-header.is-solid .aa-logo__mark, body:not([data-page="home"]) .aa-logo__mark { height: 52px; }
 
 .aa-nav .nav-link { font-weight: 700; font-size: .95rem; padding: .5rem .85rem !important; color: var(--aa-ink); position: relative; }
 .aa-nav .nav-link::after { content: ""; position: absolute; left: .85rem; right: .85rem; bottom: .15rem; height: 2px; background: var(--aa-red); transform: scaleX(0); transform-origin: left; transition: transform .25s; }
@@ -97,7 +94,7 @@ body[data-page="home"] .aa-header:not(.is-solid) .navbar-toggler { color: #fff; 
 }
 @media (max-width: 575.98px) {
   :root { --aa-head-h: 70px; }
-  .aa-logo__badge, .aa-header.is-solid .aa-logo__badge, body:not([data-page="home"]) .aa-logo__badge { width: 66px; height: 68px; margin-bottom: -10px; padding: 6px 5px 11px; }
+  .aa-logo__mark, .aa-header.is-solid .aa-logo__mark, body:not([data-page="home"]) .aa-logo__mark { height: 44px; }
   .aa-logo__text b { font-size: .9rem; }
 }
 
@@ -200,7 +197,7 @@ body[data-page="home"] .aa-header:not(.is-solid) .navbar-toggler { color: #fff; 
 .aa-tour img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .aa-tour::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,63,55,.92), rgba(10,63,55,.35)); z-index: 1; }
 .aa-tour > div { position: relative; z-index: 2; padding: clamp(1.75rem, 4vw, 3.5rem); max-width: 40rem; }
-.aa-tour__play { width: 84px; height: 84px; border-radius: 50%; display: grid; place-items: center; background: var(--aa-red); color: #fff; font-size: 1.8rem; box-shadow: 0 0 0 10px rgba(227,20,27,.25); }
+.aa-tour__play { flex: none; width: 84px; height: 84px; aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center; background: var(--aa-red); color: #fff; font-size: 1.8rem; box-shadow: 0 0 0 10px rgba(227,20,27,.25); }
 
 /* ---------- Форма ---------- */
 .aa-lead { background: #fff; color: var(--aa-ink); border-radius: calc(var(--aa-radius) + 6px); padding: clamp(1.5rem, 3vw, 2.5rem); box-shadow: var(--aa-shadow); }
@@ -251,8 +248,8 @@ body[data-page="home"] .aa-header:not(.is-solid) .navbar-toggler { color: #fff; 
 .aa-footer a { color: rgba(255,255,255,.85); }
 .aa-footer a:hover { color: #fff; }
 .aa-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
-.aa-footer__logo { display: inline-block; background: #fff; border-radius: 12px; padding: .6rem .8rem; }
-.aa-footer__logo img { width: 92px; display: block; }
+.aa-footer__logo { display: inline-block; }
+.aa-footer__logo img { display: block; height: 88px; width: auto; }
 .aa-footer__bottom { border-top: 1px solid rgba(255,255,255,.12); margin-top: 3rem; padding-top: 1.5rem; font-size: .85rem; }
 .aa-social { width: 40px; height: 40px; border-radius: 50%; display: inline-grid; place-items: center; background: rgba(255,255,255,.1); }
 

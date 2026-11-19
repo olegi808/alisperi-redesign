@@ -36,7 +36,7 @@
   <nav class="navbar navbar-expand-xl">
     <div class="container">
       <a class="aa-logo me-3" href="index.html" aria-label="Alisperi Aprebi">
-        <span class="aa-logo__badge"><img src="assets/img/logo.png" alt="" width="146" height="105"></span>
+        <span class="aa-logo__mark"><img class="aa-logo__dark" src="assets/img/logo.png" alt="" width="95" height="79"><img class="aa-logo__light" src="assets/img/logo-light.png" alt="" width="95" height="79"></span>
         <span class="aa-logo__text d-none d-sm-block"><b data-i18n="brand.name">${esc(t("brand.name"))}</b><small data-i18n="brand.tag">${esc(t("brand.tag"))}</small></span>
       </a>
       <a class="aa-phone d-xl-none ms-auto me-3 d-none d-md-block" href="${D.company.phoneHref}">${D.company.phone}</a>
@@ -66,7 +66,7 @@
   <div class="container">
     <div class="row g-4">
       <div class="col-lg-4">
-        <a href="index.html" class="aa-footer__logo"><img src="assets/img/logo.png" alt="Alisperi Aprebi" width="146" height="105"></a>
+        <a href="index.html" class="aa-footer__logo"><img src="assets/img/logo-light.png" alt="Alisperi Aprebi" width="95" height="79"></a>
         <p class="mt-3 mb-3" style="max-width:22rem" data-i18n="ft.about">${esc(t("ft.about"))}</p>
         <a class="aa-social" href="${D.company.facebook}" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
       </div>
